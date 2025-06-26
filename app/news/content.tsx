@@ -1,9 +1,9 @@
 'use client';
 
 import { useSuspenseQuery } from "@tanstack/react-query";
-import { newsOptions } from "./news-options";
+import { newsOptions } from "./options";
 
-export default function NewsListCard() {
+export default function NewsContent() {
     const { data } = useSuspenseQuery(newsOptions);
 
     return (
